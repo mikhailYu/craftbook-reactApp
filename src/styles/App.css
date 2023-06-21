@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+html,
+body,
+#root,
+.App {
+  min-height: 100vh;
+  overflow: overlay;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.App > div {
+  /* change this with nav height, also this is the container of each page */
+  /* padding-top: 60px; */
+  min-height: 100vh;
+
+  padding-bottom: 50px;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+
+  cursor: pointer;
+}
+
+.buttonStyle {
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+}

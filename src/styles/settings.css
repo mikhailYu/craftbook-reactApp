@@ -1,0 +1,253 @@
+.settingsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 40%;
+}
+
+.settingsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  padding: 50px;
+  gap: 10px;
+  width: 700px;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 30%;
+
+  filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.778));
+}
+
+.settingsTitle {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.settingsArea > form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  justify-content: space-between;
+  gap: 10px;
+}
+.settingsLabel {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#nameInput,
+#bioInput,
+#locationInput {
+  width: 80%;
+
+  background-color: white;
+  border: 1px solid black;
+
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
+#bioInput {
+  resize: none;
+  height: 200px;
+}
+
+.settingsButtonsCont {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.settingsProfilePicCont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.settingsProfilePicList {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingsProfilePicIcon {
+  aspect-ratio: 1 / 1;
+  width: 10%;
+
+  border-radius: 100px;
+
+  transition: border 100ms ease-in-out;
+
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.settingsThemeCont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.settingsThemeList {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingsThemeBox {
+  width: 30%;
+
+  height: 100px;
+
+  border-radius: 5px;
+
+  background-repeat: repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: border 100ms ease-in-out;
+}
+
+.settingsBoxText {
+  width: 100%;
+  height: 100%;
+
+  color: rgba(255, 255, 255, 0);
+  transition: all 100ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+
+  font-size: 1rem;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.settingsBoxText:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.271);
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .settingsArea {
+    width: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: 80%;
+  }
+  .settingsTitle {
+    font-size: 1.6rem;
+  }
+  .settingsLabel {
+    font-size: 0.9rem;
+    padding-top: 5px;
+  }
+
+  #nameInput,
+  #bioInput,
+  #locationInput,
+  #bioInput {
+    font-size: 0.9rem;
+  }
+
+  .settingsThemeBox {
+    width: 30%;
+  }
+
+  .settingsBoxText {
+    font-size: 0.9rem;
+  }
+
+  .settingsProfilePicIcon {
+    aspect-ratio: 1 / 1;
+    width: 30%;
+
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .settingsArea {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 90%;
+  }
+
+  .settingsTitle {
+    font-size: 1.5rem;
+  }
+  .settingsLabel {
+    font-size: 0.8rem;
+    padding-top: 5px;
+  }
+
+  #nameInput,
+  #bioInput,
+  #locationInput,
+  #bioInput {
+    font-size: 0.8rem;
+  }
+
+  .settingsThemeBox {
+    width: 30%;
+
+    height: 70px;
+  }
+
+  .settingsBoxText {
+    font-size: 0.8rem;
+  }
+
+  .settingsProfilePicIcon {
+    aspect-ratio: 1 / 1;
+    width: 30%;
+  }
+}

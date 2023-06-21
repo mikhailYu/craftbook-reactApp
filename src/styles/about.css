@@ -1,0 +1,94 @@
+.aboutCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 40%;
+}
+
+.aboutBox {
+  width: 40%;
+  min-width: 500px;
+
+  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.751));
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 10px;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 40%;
+}
+
+.aboutTitle {
+  font-size: 1.8rem;
+
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  gap: 10px;
+
+  padding: 20px;
+
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.688));
+}
+
+.aboutLink {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.aboutImg {
+  width: 60px;
+}
+
+@media (max-width: 770px) {
+  .aboutBox {
+    width: 60%;
+  }
+
+  .aboutTitle {
+    font-size: 1.7rem;
+  }
+
+  .aboutText {
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+  .aboutImg {
+    width: 50px;
+  }
+}
+
+@media (max-width: 580px) {
+  .aboutBox {
+    width: 90%;
+    min-width: 300px;
+  }
+  .aboutImg {
+    width: 40px;
+  }
+}

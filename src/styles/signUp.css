@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "handwriting";
+  src: url("../styles/handwriting.otf");
+}
+
+.signUpCont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 100px;
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 500px;
+  background-image: url("../images/themes/theme_1/sub.png");
+}
+
+/* splash page */
+
+.signUpSplash {
+  display: flex;
+  width: 600px;
+  min-width: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/assets/signUpBook.png");
+
+  height: 850px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  filter: drop-shadow(10px 15px 6px rgba(0, 0, 0, 0.561));
+  font-family: "handwriting";
+
+  transform: rotate(2deg);
+}
+
+.signUpInfoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+  gap: 30px;
+  height: 100%;
+  padding-top: 300px;
+  padding-left: 50px;
+  font-weight: bold;
+  color: rgb(26, 12, 6);
+}
+
+.signUpInfo {
+  width: 70%;
+  text-align: center;
+}
+
+/* form section */
+
+.signUpFormCont {
+  width: 500px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/assets/signUpNote.png");
+}
+
+.signUpAuthCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 10px;
+
+  font-family: "handwriting";
+  padding-top: 220px;
+  padding-left: 20px;
+  font-size: 2.4rem;
+  transform: rotate(-1.5deg);
+}
+
+.signUpGoogleBtn {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.signUpGoogleBtn > img {
+  height: 25px;
+}
+
+@media (max-width: 1300px) {
+  .signUpCont {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .signUpSplash {
+    display: flex;
+    width: 500px;
+    min-width: 500px;
+
+    height: 700px;
+  }
+  .signUpInfoCont {
+    font-size: 1.7rem;
+  }
+
+  .signUpFormCont {
+    width: 450px;
+    height: 575px;
+  }
+  .signUpAuthCont {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 580px) {
+  .signUpSplash {
+    display: flex;
+    width: 350px;
+    min-width: 350px;
+    margin-left: -10px;
+    height: 530px;
+  }
+  .signUpInfoCont {
+    font-size: 1.3rem;
+    padding-top: 180px;
+    padding-left: 50px;
+  }
+  .signUpInfo {
+    width: 90%;
+  }
+  .signUpFormCont {
+    width: 360px;
+    height: 450px;
+  }
+  .signUpAuthCont {
+    gap: 5px;
+
+    padding-top: 170px;
+    padding-left: 10px;
+    font-size: 1.8rem;
+    transform: rotate(-1.5deg);
+  }
+}

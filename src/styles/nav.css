@@ -1,0 +1,307 @@
+nav {
+  background-color: rgb(255, 255, 255);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 10%;
+  display: none;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  filter: drop-shadow(0px 6px 5px rgb(0, 0, 0));
+  z-index: 1;
+}
+
+.navElements {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 100%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  width: 100%;
+}
+.navHeader {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  width: 33%;
+}
+.navLogo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+  list-style-type: none;
+  height: 100%;
+
+  gap: 1px;
+  width: 33%;
+}
+
+.navUl > li {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 60%;
+
+  width: 100px;
+  border-radius: 10px 10px 0px 0px;
+
+  padding-bottom: 5px;
+  cursor: pointer;
+  min-width: 80px;
+}
+.navUl > li > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navRight {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 33%;
+}
+
+.navUserIcon {
+  background-color: rgb(58, 58, 58);
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+
+  border-radius: 100px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.notifBtn {
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  background-image: url("../images/assets/notification.png");
+
+  aspect-ratio: 1 / 1;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(112, 32, 6);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.notifBtn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+/* notifications  */
+.notifPosition {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.notifCont {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+
+  display: none;
+
+  background-color: rgb(255, 255, 255);
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  padding: 10px 10px 20px 10px;
+
+  overflow-y: scroll;
+}
+
+.notifCont::-webkit-scrollbar {
+  display: none;
+}
+
+/* single notifs */
+
+.notifSingleCont {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  margin-top: 5px;
+
+  font-size: 1rem;
+}
+
+.notifSingleCont > div:not(.notifFriendReq, .notifFriendAccepted) {
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.notifText {
+  display: inline-block;
+  width: 70%;
+}
+
+.notifFriendReq {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.notifFriendReqTop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.notifTextFriendReq {
+  display: inline-block;
+  width: 70%;
+}
+
+.notifButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.notifFriendAccepted {
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.notifButtons > button {
+  background-color: white;
+  border: 1px solid black;
+
+  padding: 2px 7px 2px 7px;
+
+  border-radius: 5px;
+}
+
+.notifUserIcon {
+  border-radius: 50px;
+
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.notifPostIcon {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
+
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.notifLinkUser,
+.notifLink {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notifLinkUser:hover,
+.notifLink:hover {
+  filter: brightness(2);
+}
+
+@media (max-width: 770px) {
+  .navLogo {
+    display: none;
+  }
+  .navUserIcon {
+    display: none;
+  }
+  .navUl {
+    width: 50%;
+  }
+
+  .navUl > li {
+    width: 70px;
+
+    min-width: 70px;
+    font-size: 0.8rem;
+  }
+  .navUl > li > p {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  nav {
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.727));
+  }
+  .notifBtn {
+    height: 40px;
+
+    border-radius: 5px 5px 0px 0px;
+    margin-right: -20px;
+  }
+  .notifPosition {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+}

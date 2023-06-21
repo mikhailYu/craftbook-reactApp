@@ -1,0 +1,114 @@
+.feedCont {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 40%;
+}
+
+.feedArea {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding-top: 30px;
+
+  filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.778));
+}
+
+/* new post section */
+
+.feedNewPostCont {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 40%;
+
+  min-width: 600px;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 30px 50px 30px 50px;
+}
+
+#feedNewPostInput {
+  resize: none;
+
+  border: 1px solid;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+
+  overflow-y: hidden;
+  padding: 10px;
+
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+#feedNewPostInput:focus {
+  height: 150px;
+}
+
+.feedNewPostImagePreviewCont {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.feedNewPostImagePreviewCont > img {
+  width: 100%;
+}
+
+.feedNewPostLowerCont {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+
+.feedPostsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+@media (max-width: 770px) {
+  .feedArea {
+    width: 80%;
+  }
+
+  .feedNewPostCont {
+    padding: 30px 20px 30px 20px;
+
+    background-size: 50%;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 580px) {
+  .feedArea {
+    width: 90%;
+  }
+  .feedNewPostCont {
+    min-width: 100px;
+  }
+}

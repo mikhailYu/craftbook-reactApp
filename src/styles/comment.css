@@ -1,0 +1,118 @@
+.commentCont {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 5px;
+  padding-bottom: 10px;
+
+  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.688));
+
+  border-radius: 10px;
+
+  margin-bottom: 5px;
+
+  background-color: white;
+}
+
+.commentUpperCont {
+  border-radius: 10px 10px 0px 0px;
+  background-repeat: repeat;
+  background-position: start;
+  background-size: 30%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 15px 5px 15px;
+
+  font-size: 1rem;
+}
+
+.commentUserCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.commentUsername {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.commentUserIcon {
+  border-radius: 50px;
+
+  height: 30px;
+  width: 30px;
+
+  background-color: rgb(58, 58, 58);
+  border: 1px solid white;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#commentDelete {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.commentLikesCont {
+  display: flex;
+  gap: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-top: 10px;
+}
+
+.commentDate {
+  font-size: 1rem;
+  color: rgb(69, 69, 69);
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.commentText {
+  font-size: 1rem;
+  color: black;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 770px) {
+  .commentUpperCont {
+    border-radius: 10px 10px 0px 0px;
+    background-repeat: repeat;
+    background-position: start;
+    background-size: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+
+    font-size: 0.9rem;
+  }
+
+  .commentUsername {
+    font-size: 0.9rem;
+  }
+
+  #commentDelete {
+    font-size: 1.2rem;
+  }
+
+  .commentLikesCont {
+    font-size: 0.9rem;
+  }
+
+  .commentDate {
+    font-size: 0.9rem;
+  }
+
+  .commentText {
+    font-size: 0.9rem;
+  }
+}
