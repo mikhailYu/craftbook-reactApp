@@ -31,7 +31,7 @@ function App() {
 
   function updateNav() {
     if (
-      location.pathname == "/signUp" ||
+      location.pathname == "/" ||
       location.pathname == "/authenticate" ||
       location.pathname == "/invalid"
     ) {
