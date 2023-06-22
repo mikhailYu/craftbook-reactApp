@@ -46,6 +46,7 @@ export default function Feed_page(props) {
         if (resObject.length == 0) {
           return;
         } else {
+          console.log(resObject);
           setPostsData(resObject);
         }
       })
