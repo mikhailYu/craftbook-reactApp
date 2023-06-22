@@ -71,7 +71,7 @@ function App() {
     const result = await fetch(`${serverUrl}/user/getAuth`, {
       method: "GET",
       credentials: "include",
-
+      withCredentials: true,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

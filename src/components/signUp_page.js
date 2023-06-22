@@ -16,11 +16,13 @@ export default function SignUp_Page(props) {
     await fetch(`${serverUrl}/user/authGuest`, {
       method: "POST",
       credentials: "include",
+      withCredentials: true,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
         "Access-Control-Allow-Credentials": true,
         withCredentials: true,
+        credentials: "include",
       },
       body: JSON.stringify({
         username: guestID,
@@ -39,6 +41,7 @@ export default function SignUp_Page(props) {
         console.log(err);
       });
   }
+
   return (
     <div className="signUpCont">
       <div className="signUpSplash">
