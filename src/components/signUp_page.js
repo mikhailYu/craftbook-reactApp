@@ -4,7 +4,7 @@ import { serverUrl } from "../configClientDev";
 import uniqid from "uniqid";
 import { useNavigate } from "react-router-dom";
 
-export default function SignUp_page(props) {
+export default function SignUp_Page(props) {
   const navigate = useNavigate();
 
   async function authenticate() {

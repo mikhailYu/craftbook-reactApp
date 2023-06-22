@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Profile_page from "./profile_page";
 import ProfileSettings_page from "./profileSettings_page";
-import SignUp_page from "./signUp_page";
+import SignUp_Page from "./signUp_page";
 import About_page from "./about_page";
 import Feed_page from "./feed_page";
 import Auth_page from "./auth_page";
@@ -45,7 +45,7 @@ export default function Main(props) {
       <Route
         exact
         path="/signUp"
-        element={<SignUp_page getUser={props.getUser} />}
+        element={<SignUp_Page getUser={props.getUser} />}
       ></Route>
 
       <Route
