@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/craftbook-reactApp/static/css/main.161c6476.css",
+    "main.js": "/craftbook-reactApp/static/js/main.25943932.js",
+    "static/media/header.png": "/craftbook-reactApp/static/media/header.d2ba118dff8724832c60.png",
+    "static/media/sub.png": "/craftbook-reactApp/static/media/sub.6025b05a9e5e9f283398.png",
+    "static/media/signUpBook.png": "/craftbook-reactApp/static/media/signUpBook.8487321dbad979e2bc0e.png",
+    "static/media/extra.png": "/craftbook-reactApp/static/media/extra.a1e75225dd6ceaaa9065.png",
+    "static/media/main.png": "/craftbook-reactApp/static/media/main.919bd97145247aa7a390.png",
+    "static/media/nav.png": "/craftbook-reactApp/static/media/nav.db701de271f2f379815e.png",
+    "static/media/profile.png": "/craftbook-reactApp/static/media/profile.a1e75225dd6ceaaa9065.png",
+    "static/media/comment.png": "/craftbook-reactApp/static/media/comment.a1e75225dd6ceaaa9065.png",
+    "static/media/post.png": "/craftbook-reactApp/static/media/post.a1e75225dd6ceaaa9065.png",
+    "static/media/default_icon_3.png": "/craftbook-reactApp/static/media/default_icon_3.ca8ce34d0eebc35bd4b0.png",
+    "static/media/signUpNote.png": "/craftbook-reactApp/static/media/signUpNote.2514c358ba59c6bfc817.png",
+    "static/media/default_icon_0.png": "/craftbook-reactApp/static/media/default_icon_0.ff22d205d66f4d4e0f0b.png",
+    "static/media/default_icon_4.png": "/craftbook-reactApp/static/media/default_icon_4.45f8d3bb7039342bd46f.png",
+    "static/media/default_icon_2.png": "/craftbook-reactApp/static/media/default_icon_2.1927379946fac610d963.png",
+    "static/media/logo.png": "/craftbook-reactApp/static/media/logo.5021948dd1d60b57f7be.png",
+    "static/media/default_icon_1.png": "/craftbook-reactApp/static/media/default_icon_1.8c7dcf54acdf2b74bff7.png",
+    "static/media/notifHeart.png": "/craftbook-reactApp/static/media/notifHeart.595ec29bf4d7d0e9c953.png",
+    "static/media/google.png": "/craftbook-reactApp/static/media/google.e12914ad8afda3f6f2e8.png",
+    "static/media/github.png": "/craftbook-reactApp/static/media/github.f11021803f68852df283.png",
+    "static/media/notification.png": "/craftbook-reactApp/static/media/notification.3e2101720edae15b4274.png",
+    "static/media/handwriting.otf": "/craftbook-reactApp/static/media/handwriting.63c6bdf0e3688db0ea1a.otf",
+    "index.html": "/craftbook-reactApp/index.html",
+    "main.161c6476.css.map": "/craftbook-reactApp/static/css/main.161c6476.css.map",
+    "main.25943932.js.map": "/craftbook-reactApp/static/js/main.25943932.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.161c6476.css",
+    "static/js/main.25943932.js"
+  ]
+}
