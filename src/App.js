@@ -60,6 +60,7 @@ function App() {
       .then((resObject) => {
         setUser(null);
         navigate("/signUp");
+        window.location.reload(false);
       })
       .catch((err) => {
         console.log(err);
@@ -70,6 +71,7 @@ function App() {
     const result = await fetch(`${serverUrl}/user/getAuth`, {
       method: "GET",
       credentials: "include",
+      withCredentials: true,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -81,6 +83,7 @@ function App() {
         throw new Error("authentication has been failed!");
       })
       .then((resObject) => {
+        console.log(resObject);
         setUser(resObject.user);
 
         return resObject.user;

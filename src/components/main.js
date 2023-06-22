@@ -51,7 +51,7 @@ export default function Main(props) {
       <Route
         exact
         path="/authenticate"
-        element={<Auth_page user={props.user} />}
+        element={<Auth_page user={props.user} getUser={props.getUser} />}
       ></Route>
       <Route
         exact

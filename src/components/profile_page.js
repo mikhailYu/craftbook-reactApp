@@ -91,6 +91,7 @@ export default function Profile_page(props) {
         throw new Error("Profile not found");
       })
       .then((resObject) => {
+        console.log(resObject);
         if (resObject.success == true) {
           setProfileData(resObject.user);
           return;

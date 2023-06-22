@@ -20,6 +20,7 @@ export default function SignUp_page(props) {
         Accept: "application/json",
         "Content-Type": "application/json",
         "Access-Control-Allow-Credentials": true,
+        withCredentials: true,
       },
       body: JSON.stringify({
         username: guestID,
