@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/craftbook-reactApp/static/css/main.161c6476.css",
-    "main.js": "/craftbook-reactApp/static/js/main.41faf8c8.js",
+    "main.js": "/craftbook-reactApp/static/js/main.70b00832.js",
     "static/media/header.png": "/craftbook-reactApp/static/media/header.d2ba118dff8724832c60.png",
     "static/media/sub.png": "/craftbook-reactApp/static/media/sub.6025b05a9e5e9f283398.png",
     "static/media/signUpBook.png": "/craftbook-reactApp/static/media/signUpBook.8487321dbad979e2bc0e.png",
@@ -25,10 +25,10 @@
     "static/media/handwriting.otf": "/craftbook-reactApp/static/media/handwriting.63c6bdf0e3688db0ea1a.otf",
     "index.html": "/craftbook-reactApp/index.html",
     "main.161c6476.css.map": "/craftbook-reactApp/static/css/main.161c6476.css.map",
-    "main.41faf8c8.js.map": "/craftbook-reactApp/static/js/main.41faf8c8.js.map"
+    "main.70b00832.js.map": "/craftbook-reactApp/static/js/main.70b00832.js.map"
   },
   "entrypoints": [
     "static/css/main.161c6476.css",
-    "static/js/main.41faf8c8.js"
+    "static/js/main.70b00832.js"
   ]
 }
