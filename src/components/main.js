@@ -44,7 +44,7 @@ export default function Main(props) {
       ></Route>
       <Route
         exact
-        path="/signUp"
+        path="/"
         element={<SignUp_Page getUser={props.getUser} />}
       ></Route>
 

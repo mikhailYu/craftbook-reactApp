@@ -59,7 +59,7 @@ function App() {
       })
       .then((resObject) => {
         setUser(null);
-        navigate("/signUp");
+        navigate("/");
         window.location.reload(false);
       })
       .catch((err) => {
