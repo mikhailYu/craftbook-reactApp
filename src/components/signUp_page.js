@@ -32,7 +32,8 @@ export default function SignUp_Page(props) {
         throw new Error(response.status);
       })
       .then((resObject) => {
-        navigate("/authenticate");
+        console.log(resObject);
+        // navigate("/authenticate");
       })
       .catch((err) => {
         console.log(err);
