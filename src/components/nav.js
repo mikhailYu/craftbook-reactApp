@@ -146,6 +146,7 @@ export default function Nav(props) {
             src={require("../images/assets/logo.png")}
           />
         </div>
+
         <ul className="navUl">
           <li style={{ backgroundColor: buttonBg }}>
             <p
@@ -155,6 +156,16 @@ export default function Nav(props) {
               style={{ color: buttonText }}
             >
               Feed
+            </p>
+          </li>
+          <li style={{ backgroundColor: buttonBg }}>
+            <p
+              style={{ color: buttonText }}
+              onClick={() => {
+                navigate(userLink);
+              }}
+            >
+              Profile
             </p>
           </li>
           <li style={{ backgroundColor: buttonBg }}>
