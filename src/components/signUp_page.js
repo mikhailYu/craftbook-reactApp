@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function SignUp_Page(props) {
   const navigate = useNavigate();
 
-  async function authenticate() {
+  function authenticate() {
     window.open(authLink, "_self");
   }
 
@@ -35,7 +35,7 @@ export default function SignUp_Page(props) {
       })
       .then((resObject) => {
         console.log(resObject);
-        // navigate("/authenticate");
+        navigate("/authenticate");
       })
       .catch((err) => {
         console.log(err);
