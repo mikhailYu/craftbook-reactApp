@@ -80,7 +80,6 @@ function App() {
         throw new Error("authentication has been failed!");
       })
       .then((resObject) => {
-        console.log(resObject);
         setUser(resObject.user);
 
         return resObject.user;
