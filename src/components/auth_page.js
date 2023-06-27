@@ -14,5 +14,9 @@ export default function Auth_page(props) {
     }
   }, [props.user]);
 
-  return <div className="authCont">Authenticating...</div>;
+  return (
+    <div className="authCont">
+      <p>Authenticating...</p>
+    </div>
+  );
 }
