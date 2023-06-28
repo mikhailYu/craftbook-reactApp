@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://mikhailYu.github.io/craftbook-reactApp/#",
+  "homepage": "https://mikhailYu.github.io/craftbook-reactApp/#/",
   "eslintConfig": {
     "extends": [
       "react-app",
